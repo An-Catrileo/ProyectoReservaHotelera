@@ -1,0 +1,197 @@
+// Diagrama de la base de datos del Sistema de Reservas de Hotel
+// Formato DBDiagram.io
+
+Table users {
+  id bigint [pk, increment]
+  name varchar
+  email varchar [unique]
+  phone varchar [null]
+  country varchar [null]
+  city varchar [null]
+  email_verified_at timestamp [null]
+  password varchar
+  remember_token varchar [null]
+  created_at timestamp [null]
+  updated_at timestamp [null]
+}
+
+Table rooms {
+  id bigint [pk, increment]
+  name varchar
+  slug varchar
+  entry text
+  description text
+  quantity smallint [default: 1]
+  price decimal(10,2) [default: 0]
+  active boolean [default: 1]
+  adults tinyint [default: 0]
+  kids tinyint [default: 0, null]
+  img varchar
+  thumb varchar
+  home boolean [default: false]
+  about boolean [default: false]
+  created_at timestamp [null]
+  updated_at timestamp [null]
+}
+
+Table reservations {
+  id bigint [pk, increment]
+  code varchar [unique]
+  start_date date
+  end_date date
+  adults tinyint [default: 0]
+  kids tinyint [default: 0, null]
+  quantity integer [default: 1]
+  check_in varchar(8) [default: "02:30 PM", null]
+  special_request text [null]
+  state varchar [default: "successful"]
+  payment_status enum('unpaid', 'partially_paid', 'paid') [default: 'unpaid']
+  nights tinyint
+  price decimal
+  sub_total decimal(12,2)
+  tax_amount float
+  tax_percent tinyint
+  total decimal(12,2)
+  deposit_amount decimal(10,2) [null]
+  remaining_amount decimal(10,2) [null]
+  data json
+  offer json [null]
+  room_id bigint [null]
+  user_id bigint [null]
+  discount_id bigint [null]
+  created_at timestamp [null]
+  updated_at timestamp [null]
+}
+
+Table payments {
+  id bigint [pk, increment]
+  reservation_id bigint
+  transaction_id varchar [null]
+  amount decimal(10,2)
+  type enum('deposit', 'remaining') [default: 'deposit']
+  status enum('pending', 'completed', 'failed') [default: 'pending']
+  payment_method enum('credit_card', 'debit_card', 'paypal') [default: 'credit_card']
+  payment_details json [null]
+  created_at timestamp [null]
+  updated_at timestamp [null]
+}
+
+Table complements {
+  id bigint [pk, increment]
+  name varchar
+  icon varchar
+  price decimal(10,2) [default: 0]
+  type_price enum('reservation', 'night')
+  entry text
+  active boolean [default: 1]
+  created_at timestamp [null]
+  updated_at timestamp [null]
+}
+
+Table complement_room {
+  id bigint [pk, increment]
+  complement_id bigint
+  room_id bigint
+}
+
+Table images {
+  id bigint [pk, increment]
+  img varchar
+  thumb varchar [null]
+  order tinyint [default: 0, null]
+  alt varchar [null]
+  title varchar [null]
+  model_type varchar
+  model_id bigint
+  created_at timestamp [null]
+  updated_at timestamp [null]
+}
+
+Table galleries {
+  id bigint [pk, increment]
+  img varchar
+  created_at timestamp [null]
+  updated_at timestamp [null]
+}
+
+Table discounts {
+  id bigint [pk, increment]
+  code varchar(8)
+  percent tinyint
+  quantity integer
+  active boolean
+  deleted_at timestamp [null]
+  created_at timestamp [null]
+  updated_at timestamp [null]
+}
+
+Table beds {
+  id bigint [pk, increment]
+  name varchar
+  entry text
+  icon varchar
+  created_at timestamp [null]
+  updated_at timestamp [null]
+}
+
+Table bed_room {
+  id bigint [pk, increment]
+  bed_id bigint
+  room_id bigint
+  quantity tinyint
+}
+
+Table amenities {
+  id bigint [pk, increment]
+  name varchar
+  icon varchar
+  entry text [null]
+  created_at timestamp [null]
+  updated_at timestamp [null]
+}
+
+Table amenity_room {
+  id bigint [pk, increment]
+  room_id bigint
+  amenity_id bigint
+}
+
+Table offers {
+  id bigint [pk, increment]
+  name varchar [null]
+  nights tinyint
+  percent float [default: 0]
+  created_at timestamp [null]
+  updated_at timestamp [null]
+}
+
+Table pages {
+  id bigint [pk, increment]
+  title varchar
+  slug varchar
+  body text
+  img varchar [null]
+  thumb varchar [null]
+  active boolean [default: 1]
+  created_at timestamp [null]
+  updated_at timestamp [null]
+}
+
+Table categories {
+  id bigint [pk, increment]
+  name varchar
+  created_at timestamp [null]
+  updated_at timestamp [null]
+}
+
+// Relaciones
+Ref: reservations.room_id > rooms.id
+Ref: reservations.user_id > users.id
+Ref: reservations.discount_id > discounts.id
+Ref: payments.reservation_id > reservations.id
+Ref: complement_room.complement_id > complements.id
+Ref: complement_room.room_id > rooms.id
+Ref: bed_room.bed_id > beds.id
+Ref: bed_room.room_id > rooms.id
+Ref: amenity_room.room_id > rooms.id
+Ref: amenity_room.amenity_id > amenities.id
