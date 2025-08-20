@@ -19,11 +19,11 @@ const SectionContact = () => {
                             <div className='mt-8 grid md:grid-cols-2 gap-x-5 gap-y-8'>
                                 <InfoIconItem Icon={PhoneIcon} title={"Telefono"}>
                                     <a className="block" href="tel:+1234567890">(52) 123-12312</a>
-                                    <a className="block" href="tel:+1234567890">(52) 123-4455</a>
+                                    <a className="block" href="tel:+1234567890">(52) 123-44556</a>
                                 </InfoIconItem>
                                 <InfoIconItem Icon={EnvelopeIcon} title={"Email"}>
-                                    <a className="block" href="mailto:example@domain.com">contact@pacificreef.com</a>
-                                    <a className="block" href="mailto:example@domain.com">contact@pacificreef.com</a>
+                                    <a className="block" href="mailto:example@domain.com">contact@granoasisresort.com</a>
+                                    <a className="block" href="mailto:example@domain.com">contact@granoasisresort.com</a>
                                 </InfoIconItem>
                                 <InfoIconItem Icon={MapPinIcon} title={"Ubicacion"}>
                                     <span>

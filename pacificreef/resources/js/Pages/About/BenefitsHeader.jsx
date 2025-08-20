@@ -10,10 +10,10 @@ const BenefitsHeader = () => {
             <div className='container'>
                 <TitleEntry>
                     <TitleEntry.Title>
-                        Los principales beneficios de elegir Pacific Reef
+                        Los principales beneficios de elegir Gran Oasis Resort
                     </TitleEntry.Title>
                     <TitleEntry.Entry>
-                        Aproveche la oportunidad de disfrutar de una experiencia inolvidable en Pacific Reef, su hotel ideal en Concón.
+                        Aproveche la oportunidad de disfrutar de una experiencia inolvidable en Gran Oasis Resort, su hotel ideal en Concón.
                     </TitleEntry.Entry>
                 </TitleEntry>
 

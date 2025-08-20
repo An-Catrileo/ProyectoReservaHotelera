@@ -21,10 +21,10 @@ const HeroImage = () => {
 
                             <div className='z-10 lg:pr-20'>
                                 <h1 className="max-w-4xl text-4xl sm:text-5xl font-bold lg:text-[52px]">
-                                    <span className='text-primary-600'> Pacific Reef</span>: El confort y descanso que necesitas
+                                    <span className='text-primary-600'> Gran Oasis Resort</span>: El confort y descanso que necesitas
                                 </h1>
                                 <p className="font-medium max-w-2xl mt-6 text-lg lg:text-lg opacity-75  pl-4 border-l-4 border-primary-600">
-                                    Pacific Reef representa un concepto de alojamiento innovador, con prestaciones y
+                                    Gran Oasis Resort representa un concepto de alojamiento innovador, con prestaciones y
                                     espacios donde prima el confort de cada huésped, todo ello revestido por un diseño
                                     sorprendente e innovador.
                                 </p>
