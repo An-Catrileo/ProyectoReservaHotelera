@@ -37,14 +37,14 @@ const HomeServices = () => {
                                     <div className='mr-3'>
                                         <Briefcase className='w-14 h-14 text-primary-800' />
                                     </div>
-                                    <p>Almacenamiento gratuito de equipaje de cualquier tamaño.</p>
+                                    <p>Almacenamiento gratuito para equipaje de cualquier tamaño.</p>
                                 </div>
                                 <div className='flex items-center'>
                                     <div className='mr-3'>
                                         <ParkingCircle className='w-14 h-14 text-primary-800 mr-3 ' />
                                     </div>
                                     <p>
-                                        Plaza de aparcamiento asignada a usted
+                                        Estacionamiento privado asignado a usted
                                     </p>
 
                                 </div>

@@ -31,7 +31,7 @@ const DetailsOrder = ({ reservation }) => {
                                     </div>
                                     <div className="text-green-700 flex-grow">
                                         <span className="font-semibold block text-green-600">
-                                            Gracias. Tu reservacion ha sido creada.
+                                            Gracias. Tu reservacion ha sido enviada.
                                         </span>
                                     </div>
                                 </div>

@@ -17,16 +17,19 @@ const RuleReservation = () => {
                         <div className='mt-12'>
                             <ul className='space-y-5'>
                                 <RuleItem>
-                                    La hora de llegada es después de las 14:00. La hora de salida es a las 12-00.
+                                    El Check-In es a partir de las 14:00 y el Check-Out es a las 12:00.
                                 </RuleItem>
                                 <RuleItem>
-                                    ¿La liquidación se produce sólo tras el pago completo?
+                                    El hospedaje debe estar pagado en su totalidad al momento del check-in.
                                 </RuleItem>
                                 <RuleItem>
-                                    ¿Se puede alojarse en el albergue solo después de presentar el pasaporte?
+                                    Para alojarse, es obligatorio presentar un pasaporte o documento de identidad vigente.
                                 </RuleItem>
                                 <RuleItem>
-                                    But also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                    Se solicita cuidar las instalaciones y mantener el orden para el bienestar de todos los huéspedes.
+                                </RuleItem>
+                                <RuleItem>
+                                    Mantenga un ambiente de respeto, evitando ruidos excesivos que puedan afectar el descanso de otros huéspedes.
                                 </RuleItem>
                             </ul>
                         </div>
@@ -40,7 +43,7 @@ const RuleReservation = () => {
 
                                 <TextInput placeholder="Nombre" />
                                 <TextInput placeholder="Email" />
-                                <textarea className='lg:col-span-2 textarea-form'>
+                                <textarea placeholder="" className='lg:col-span-2 textarea-form'>
 
 
                                 </textarea>

@@ -55,7 +55,7 @@ const UserForm = ({ handleChange, formUser }) => {
                             />
                         </div>
                         <label htmlFor="newsletter" className='ml-2 block'>
-                            Deseo recibir información, descuentos de hotel y beneficios del club de fidelización Star Traveler.
+                            Deseo recibir información, descuentos del hotel y beneficios del club de fidelización Star Traveler.
                         </label>
                     </div>
                     <InputError message={formUser.errors.newsletter} className="mt-2" />

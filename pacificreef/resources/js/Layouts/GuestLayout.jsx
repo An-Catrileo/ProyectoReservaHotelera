@@ -18,7 +18,7 @@ export default function Guest({ children }) {
                     </div>
                 </div>
                 <div className="mt-8 text-center text-sm text-gray-600">
-                    <p>¿Necesita ayuda? Contacte a <a href="mailto:soporte@pacificreef.com" className="text-primary-600 hover:text-primary-500">soporte@pacificreef.com</a></p>
+                    <p>¿Necesita ayuda? Contacte a <a href="mailto:soporte@granoasisresort.com" className="text-primary-600 hover:text-primary-500">soporte@granoasisresort.com</a></p>
                 </div>
             </div>
         </Layout>

@@ -23,11 +23,11 @@ const SectionContact = () => {
                                 </InfoIconItem>
                                 <InfoIconItem Icon={EnvelopeIcon} title={"Email"}>
                                     <a className="block" href="mailto:example@domain.com">contact@granoasisresort.com</a>
-                                    <a className="block" href="mailto:example@domain.com">contact@granoasisresort.com</a>
+                                    <a className="block" href="mailto:example@domain.com">contact2@granoasisresort.com</a>
                                 </InfoIconItem>
                                 <InfoIconItem Icon={MapPinIcon} title={"Ubicacion"}>
                                     <span>
-                                        Concon, Chile
+                                        Concón, V Región, Chile
                                     </span>
                                 </InfoIconItem>
                                 <InfoIconItem Icon={ClockIcon} title={"Horario"}>

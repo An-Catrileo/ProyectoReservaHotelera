@@ -49,13 +49,14 @@ const Footer = () => {
                         <ul >
                             <li className='flex '>
                                 <MapPinIcon className='w-7 h-7 mr-3' />
-                                <p>Concon, Chile <br />
+                                <p>Concón, V Región, Chile <br />
                                 </p>
                             </li>
                             <li className='flex  mt-5'>
                                 <PhoneIcon className='w-6 h-6 mr-3' />
-                                <p>+569 1234 1234<br />
-                                    +569 1234 1234
+                                <p>+52 12312312
+                                    <br />
+                                    +52 12344556
                                 </p>
                             </li>
                         </ul>
@@ -63,11 +64,12 @@ const Footer = () => {
 
                     <ItemFooter title={__('footer.follow_us')}>
                         <p>
-                            Es un hecho establecido
-                            <br />
-                            hace demasiado
-                            <br />
-                            tiempo
+                            "Descubre la elegancia
+                            <br/>
+                            entre palmeras,
+                            <br/>
+                             sol y mar”
+
                         </p>
                         <div className='flex items-center gap-7 mt-3'>
                             <a href="#"><svg className="h-6 w-full transition hover:scale-125" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
