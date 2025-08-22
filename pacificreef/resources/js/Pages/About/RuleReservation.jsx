@@ -43,9 +43,8 @@ const RuleReservation = () => {
 
                                 <TextInput placeholder="Nombre" />
                                 <TextInput placeholder="Email" />
-                                <textarea placeholder="" className='lg:col-span-2 textarea-form'>
-
-
+                                <textarea placeholder="Haga sus preguntas aqui" className='lg:col-span-2 textarea-form'>
+                                    
                                 </textarea>
                                 <div className='mt-2'>
                                     <PrimaryButton className='w-full lg:w-auto'>Envia mensaje</PrimaryButton>

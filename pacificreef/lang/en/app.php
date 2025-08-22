@@ -21,7 +21,7 @@ return [
     'quick_links' => 'Quick Links',
     'contact_us' => 'Contact Us',
     'follow_us' => 'Follow Us',
-    'hotel_desc' => 'Welcome to Pacific Reef, your ideal hotel in Concón. We offer a unique experience with ocean views, comfortable rooms and first-class service to make your stay unforgettable.',
+    'hotel_desc' => 'Welcome to Gran Oasis Resort, your ideal hotel in Concón. We offer a unique experience with ocean views, comfortable rooms and first-class service to make your stay unforgettable.',
   ],
 
   // Buttons

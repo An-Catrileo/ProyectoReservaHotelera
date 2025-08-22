@@ -21,7 +21,7 @@ return [
     'quick_links' => 'Enlaces Rápidos',
     'contact_us' => 'Contáctenos',
     'follow_us' => 'Síganos',
-    'hotel_desc' => 'Bienvenidos a Pacific Reef, su hotel ideal en Concón. Ofrecemos una experiencia única con vistas al mar, habitaciones confortables y un servicio de primera calidad para que su estancia sea inolvidable.',
+    'hotel_desc' => 'Bienvenidos a Gran Oasis Resort, su hotel ideal en Concón. Ofrecemos una experiencia única con vistas al mar, habitaciones confortables y un servicio de primera calidad para que su estancia sea inolvidable.',
   ],
 
   // Botones
@@ -96,10 +96,10 @@ return [
 
   // Reglas
   'rules' => [
-    'check_in_out' => 'La hora de llegada es después de las 2:00 PM. La hora de salida es a las 12:00 AM',
-    'payment' => 'La liquidación se produce sólo tras el pago completo',
-    'passport' => 'Se puede alojarse en el albergue solo después de presentar el pasaporte',
-    'pets' => 'No se permiten mascotas en las habitaciones, excepto perros de asistencia debidamente acreditados',
+    'check_in_out' => 'El Check-In es a partir de las 14:00 y el Check-Out es a las 12:00',
+    'payment' => 'El hospedaje debe estar pagado en su totalidad al momento del check-in',
+    'passport' => 'Para alojarse, es obligatorio presentar un pasaporte o documento de identidad vigente',
+    'pets' => 'No se permiten mascotas en las habitaciones, excepto perros de asistencia debidamente inscritos',
     'smoking' => 'Está prohibido fumar en todas las instalaciones del hotel. Disponemos de áreas designadas para fumadores',
   ],
 
@@ -112,19 +112,19 @@ return [
     'questions' => [
       'choose_room' => [
         'question' => '¿Cómo se elige el dormitorio adecuado?',
-        'answer' => 'Para elegir la habitación adecuada, considere sus necesidades: tamaño del grupo, presupuesto, comodidades deseadas y ubicación preferida. Nuestro sitio web permite filtrar por estas opciones, o puede contactar directamente con nuestro servicio de atención al cliente para recibir recomendaciones personalizadas.'
+        'answer' => 'Para elegir su habitacion ideal, considere sus necesidades: tamaño del grupo, presupuesto, comodidades deseadas y/o orientacion de habitacion. Nuestro sitio web permite filtrar por estas opciones, o puede contactar directamente con nuestro servicio de atención al cliente para recibir recomendaciones personalizadas.'
       ],
       'capacity' => [
         'question' => '¿Cuántas personas hay en una habitación de hotel?',
-        'answer' => 'La capacidad de nuestras habitaciones varía según el tipo. Las habitaciones estándar individuales son para 1 persona, las dobles para 2 personas, y las familiares pueden alojar hasta 4 personas. También disponemos de suites que pueden adaptarse a grupos más grandes. Todas las habitaciones indican claramente su capacidad máxima.'
+        'answer' => 'La capacidad de nuestras habitaciones varía según el tipo. Las habitaciones estándar individuales son para 1 persona, las dobles para 2 personas, y las familiares pueden alojar hasta 4 personas. También disponemos de suites que pueden adaptarse a grupos más grandes. Todas las habitaciones indican claramente su capacidad máxima y cantidad de camas.'
       ],
       'private_rooms' => [
         'question' => '¿Hay habitaciones privadas en el hotel?',
-        'answer' => 'Sí, todas nuestras habitaciones son privadas y cuentan con su propio baño. Ofrecemos diferentes categorías desde habitaciones estándar hasta suites de lujo, todas ellas garantizando privacidad y confort durante su estancia.'
+        'answer' => 'Sí, todas nuestras habitaciones son privadas y cuentan con su propio baño. Ofrecemos diferentes categorías, desde habitaciones estándar hasta suites de lujo, todas ellas garantizando privacidad y confort durante su estancia.'
       ],
       'security_items' => [
         'question' => '¿Cómo mantengo mis cosas seguras en un dormitorio?',
-        'answer' => 'Todas nuestras habitaciones cuentan con cajas de seguridad donde puede guardar sus objetos de valor. Además, nuestro hotel dispone de un sistema de seguridad con cámaras en las áreas comunes y personal de seguridad las 24 horas para garantizar la seguridad de todos nuestros huéspedes.'
+        'answer' => 'Todas nuestras habitaciones cuentan con cajas de seguridad donde puede guardar sus objetos de valor. Además, nuestro hotel dispone de un sistema de seguridad con cámaras en las áreas comunes, pasillos y personal de seguridad las 24 horas para garantizar la seguridad de todos nuestros huéspedes.'
       ],
       'personal_security' => [
         'question' => '¿Cómo te mantienes seguro en un dormitorio?',

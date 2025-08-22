@@ -14,7 +14,7 @@ const Contact = ({ page }) => {
 
     // Valores por defecto en caso de que page sea null
     const pageTitle = page?.title || 'Contacto';
-    const pageDescription = page?.description || 'Contacta con nuestro hotel';
+    const pageDescription = page?.description || 'Contacta a nuestro hotel';
 
     return (
         <Layout>

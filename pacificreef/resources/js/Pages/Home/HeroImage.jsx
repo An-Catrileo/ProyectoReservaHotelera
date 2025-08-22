@@ -26,7 +26,7 @@ const HeroImage = () => {
                                 <p className="font-medium max-w-2xl mt-6 text-lg lg:text-lg opacity-75  pl-4 border-l-4 border-primary-600">
                                     Gran Oasis Resort representa un concepto de alojamiento innovador, con prestaciones y
                                     espacios donde prima el confort de cada huésped, todo ello revestido por un diseño
-                                    sorprendente e innovador.
+                                    sorprendente y novedoso.
                                 </p>
 
                             </div>
