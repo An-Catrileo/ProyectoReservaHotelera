@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Pacific Reef'),
+    'name' => env('APP_NAME', 'Gran Oasis Resort'),
 
     /*
     |--------------------------------------------------------------------------
