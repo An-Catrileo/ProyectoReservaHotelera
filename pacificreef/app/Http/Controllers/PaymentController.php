@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Enums\PaymentStatus;
+use App\Mail\PaymentReceipt;
 use App\Models\Payment;
 use App\Models\Reservation;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 use Inertia\Inertia;
 
 class PaymentController extends Controller
@@ -93,8 +96,24 @@ class PaymentController extends Controller
     }
     $reservation->save();
 
+    // Recargar la reserva con las relaciones necesarias
+    $reservation->load(['payments', 'user']);
+
+    // Enviar correo electrónico con el comprobante de pago
+    try {
+      $userEmail = $reservation->user->email ?? $reservation->data->user->email ?? null;
+
+      if ($userEmail) {
+        Mail::to($userEmail)->send(new PaymentReceipt($reservation, $payment));
+      }
+    } catch (\Exception $e) {
+      // Log del error pero no interrumpir el flujo
+      Log::error('Error al enviar correo de comprobante de pago: ' . $e->getMessage());
+    }
+
     // Redireccionar al usuario a la página de confirmación
-    return redirect()->route('payment.confirmation', ['code' => $reservation->code]);
+    return redirect()->route('payment.confirmation', ['code' => $reservation->code])
+      ->with('success', 'Pago procesado exitosamente. Se ha enviado un comprobante a tu correo electrónico.');
   }
 
   public function showConfirmation($code)

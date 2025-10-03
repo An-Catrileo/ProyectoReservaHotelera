@@ -1,0 +1,17 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo del logo -->
+  <rect width="200" height="60" fill="#0C4A6E" rx="8"/>
+  
+  <!-- Olas decorativas -->
+  <path d="M0 35 Q 25 30, 50 35 T 100 35 T 150 35 T 200 35 L 200 60 L 0 60 Z" fill="#0369A1" opacity="0.6"/>
+  <path d="M0 42 Q 30 38, 60 42 T 120 42 T 180 42 T 200 42 L 200 60 L 0 60 Z" fill="#0284C7" opacity="0.4"/>
+  
+  <!-- Texto "Pacific Reef" -->
+  <text x="100" y="25" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+    Pacific Reef
+  </text>
+  <text x="100" y="40" font-family="Arial, sans-serif" font-size="11" fill="#BAE6FD" text-anchor="middle">
+    HOTEL
+  </text>
+</svg>
+
