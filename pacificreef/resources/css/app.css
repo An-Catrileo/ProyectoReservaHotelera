@@ -1,6 +1,9 @@
+@import './flatpickr_material_blue.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 @layer base {
     .py-section {

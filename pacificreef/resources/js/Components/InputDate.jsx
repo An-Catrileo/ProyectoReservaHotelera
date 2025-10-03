@@ -1,7 +1,7 @@
 import React from 'react'
 import Flatpickr from "react-flatpickr";
-import "flatpickr/dist/themes/material_blue.css";
-import { Spanish } from "flatpickr/dist/l10n/es.js"
+import { Input } from '../Components/ui/input';
+import * as SpanishLocale from '@/flatpickr_l10n/es.js'
 const InputDate = ({ options, ...props }) => {
 
 
@@ -12,7 +12,7 @@ const InputDate = ({ options, ...props }) => {
                 altInput: true,
                 altFormat: "D d M Y",
                 dateFormat: "Y-m-d",
-                locale: Spanish,
+                locale: SpanishLocale,
                 firstDayOfWeek: 1,
                 ...options
             }}
